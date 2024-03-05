@@ -1,10 +1,17 @@
 import './App.css'
+import { Layout } from './components/Layout'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route path='product' element={<h1>Product</h1>}/>
+          <Route path='features' element={<h1>Features</h1>}/>
+        </Route>
+      </Routes>    
+    </BrowserRouter>
   )
 }
 
