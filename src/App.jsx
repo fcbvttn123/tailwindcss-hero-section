@@ -22,6 +22,15 @@ function App() {
       </div>
       {/* Hero Section */}
       <div className='mt-36'>
+        <button className='xs:flex items-center justify-center gap-x-1 mb-8 border rounded-3xl mx-auto px-4 py-1 hidden'>
+          <p className='text-slate-500'>Announcing our next round of funding.</p>
+          <div className='flex items-center gap-x-2'>
+              <p className='font-bold text-indigo-500'>Read more</p>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6"> 
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+        </button>
         <h1 className='text-4xl font-bold text-center'>Data to enrich your online business</h1>
         <h3 className='text-xl text-slate-500 text-center my-7'>Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</h3>
         <div className='flex items-center justify-center gap-x-6'>
@@ -36,7 +45,7 @@ function App() {
       </div>
       {/* Menu Panel (Mobile) */}
       {!menuPanelStatus && 
-      <div className="fixed inset-0 bg-white flex flex-col items-start gap-y-6 px-8 pt-20 ">
+      <div className="fixed inset-0 xs:left-1/3 bg-white flex flex-col items-start gap-y-6 px-8 pt-20 border-l-2">
         <button className='font-bold w-full text-start'>Product</button>
         <button className='font-bold w-full text-start'>Feature</button>
         <button className='font-bold w-full text-start'>Marketplace</button>
