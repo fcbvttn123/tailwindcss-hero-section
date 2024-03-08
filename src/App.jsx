@@ -21,7 +21,7 @@ function App() {
         <button onClick={() => setMenuPanelStatus(prev => !prev)}>{menuPanelStatus ? openMenuIcon : closeMenuIcon}</button>
       </div>
       {/* Hero Section */}
-      <div className='mt-36'>
+      <div className='mt-36 mx-auto sm:max-w-2xl'>
         <button className='xs:flex items-center justify-center gap-x-1 mb-8 border rounded-3xl mx-auto px-4 py-1 hidden'>
           <p className='text-slate-500'>Announcing our next round of funding.</p>
           <div className='flex items-center gap-x-2'>
@@ -31,7 +31,7 @@ function App() {
               </svg>
             </div>
         </button>
-        <h1 className='text-4xl font-bold text-center'>Data to enrich your online business</h1>
+        <h1 className='text-4xl sm:text-6xl font-bold text-center'>Data to enrich your online business</h1>
         <h3 className='text-xl text-slate-500 text-center my-7'>Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</h3>
         <div className='flex items-center justify-center gap-x-6'>
           <button className='text-white font-bold p-2 px-3 bg-indigo-600 rounded-lg hover:opacity-80'>Get Started</button>
