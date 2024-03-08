@@ -18,7 +18,21 @@ function App() {
       {/* Header Bar */}
       <div className='fixed top-0 left-0 w-full z-30 flex items-center justify-between px-8 py-4'>
         <button className='w-8 aspect-square bg-indigo-600 rounded-full'></button>
-        <button onClick={() => setMenuPanelStatus(prev => !prev)}>{menuPanelStatus ? openMenuIcon : closeMenuIcon}</button>
+        {/* Mobile */}
+        <button className='sm:hidden' onClick={() => setMenuPanelStatus(prev => !prev)}>{menuPanelStatus ? openMenuIcon : closeMenuIcon}</button>
+        {/* Desktop */}
+        <nav className='hidden sm:flex items-center gap-x-8'>
+          <button className='font-bold w-full text-start'>Product</button>
+          <button className='font-bold w-full text-start'>Feature</button>
+          <button className='font-bold w-full text-start'>Marketplace</button>
+          <button className='font-bold w-full text-start'>Company</button>
+        </nav>
+        <button className='hidden sm:flex items-center gap-x-2'>
+          <p className='font-bold'>Log in</p>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6"> 
+            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+          </svg>
+        </button>
       </div>
       {/* Hero Section */}
       <div className='mt-36 mx-auto sm:max-w-2xl'>
